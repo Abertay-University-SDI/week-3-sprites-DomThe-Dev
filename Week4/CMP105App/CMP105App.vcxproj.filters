@@ -58,5 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\Downloads\blackhole.jfif" />
+    <Image Include="..\..\..\..\..\Downloads\explosion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

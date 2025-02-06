@@ -20,7 +20,11 @@ public:
 private:
 	// Level objects
 	int steps;
+	float zoomX = 1920;
+	float zoomY = 1080;
 	sf::View view;
+	sf::Text text;
+	sf::Font font;
 
 	GameObject duck;
 	sf::Texture texture;

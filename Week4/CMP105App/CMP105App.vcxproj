@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\Downloads\blackhole.jfif" />
+    <Image Include="..\..\..\..\..\Downloads\explosion.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
