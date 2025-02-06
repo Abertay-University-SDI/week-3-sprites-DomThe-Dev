@@ -28,5 +28,7 @@ private:
 
 	GameObject duck;
 	sf::Texture texture;
+	GameObject explosion;
+	sf::Texture extexture;
 
 };

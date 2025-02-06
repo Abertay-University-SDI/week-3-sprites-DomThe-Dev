@@ -7,6 +7,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	
 	steps = 0;
 	texture.loadFromFile("gfx/coolDuck.png");
+	extexture.loadFromFile("gfx/explosion.png");
 	if (!font.loadFromFile("font/arial.ttf"))
 	{
 		std::cout << "cant load font" << std::endl;
@@ -20,6 +21,10 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	duck.setTexture(&texture);
 	duck.setSize(sf::Vector2f(600, 600));
 	duck.setPosition((window->getSize().x / 2) - (duck.getSize().x / 2), (window->getSize().y / 2) - (duck.getSize().y / 2));
+
+	explosion.setTexture(&extexture);
+	explosion.setSize(sf::Vector2f(250, 250));
+	explosion.setPosition(sf::Vector2f(-1000000, -100000));
 
 	view.setSize(sf::Vector2f(480.f, 270.f));
 	view.setCenter((window->getSize().x / 2) + duck.getSize().y, (window->getSize().y / 2) - (duck.getSize().y / 5));
@@ -82,6 +87,7 @@ void Level::update(float dt)
 	if (steps == 3)
 	{
 		text.setPosition(window->getSize().x / 2, window->getSize().y / 2);
+		explosion.setPosition(window->getSize().x / 2, window->getSize().y / 2 + 100);
 		//text.setPosition(duck.getPosition().x, duck.getPosition().y - duck.getSize().y);
 		text.setRotation(view.getRotation());
 
@@ -97,6 +103,7 @@ void Level::render()
 	beginDraw();
 
 	window->draw(duck);
+	window->draw(explosion);
 	window->draw(text);
 
 	endDraw();
