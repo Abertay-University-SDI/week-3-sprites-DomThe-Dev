@@ -54,7 +54,6 @@ void Level::update(float dt)
 {
 	if (view.getCenter().x > (window->getSize().x / 2) - duck.getSize().x && steps == 0)
 	{
-		std::cout << "moving" << view.getCenter().x << std::endl;
 		view.move(-250 * dt, 0);
 		window->setView(view);
 	}
@@ -74,7 +73,6 @@ void Level::update(float dt)
 	if (steps == 2)
 	{
 		view.setSize(view.getSize().x - (zoomX * dt), view.getSize().y - (zoomY * dt) );
-		std::cout << view.getSize().x << ", " << view.getSize().y << std::endl;
 		view.rotate(360.f * dt);
 		window->setView(view);
 		zoomX += zoomX * dt;
