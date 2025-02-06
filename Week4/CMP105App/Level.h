@@ -19,7 +19,10 @@ public:
 
 private:
 	// Level objects
-	GameObject testSprite;
+	int steps;
+	sf::View view;
+
+	GameObject duck;
 	sf::Texture texture;
 
 };

@@ -173,6 +173,9 @@
     <ClInclude Include="Framework\GameObject.h" />
     <ClInclude Include="Level.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Downloads\blackhole.jfif" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

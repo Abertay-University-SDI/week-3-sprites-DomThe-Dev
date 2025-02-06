@@ -56,4 +56,7 @@
       <Filter>Framework</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Downloads\blackhole.jfif" />
+  </ItemGroup>
 </Project>
